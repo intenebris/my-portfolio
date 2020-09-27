@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<title>Верстальщик HTML</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/media.css"> -->
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__top">
+				<div class="header__logo">HTML<span>Верстальщик</span></div>
+				<nav class="header__menu">
+					<ul class="header__menu-list">
+						<li class="header__menu-item"><a href="#about" class="header__menu-link">Мои навыки</a></li>
+						<li class="header__menu-item"><a href="#portfolio" class="header__menu-link">Портфолио</a></li>
+						<li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__slider">
+				<div class="slider-wrapper">
+					<div class="header__item">
+						<div class="header__item-title">Всем привет, меня зовут Михаил, и я верстаю сайты<span>.</span>
+						</div>
+						<div class="header__item-text">Ниже вы найдете примеры моих работ, и кое-что обо мне.</div>
+					</div>
+					<div class="header__item">
+						<div class="header__item-title">Hello everyone, my name is Mikhail, and I make up
+							websites<span>.</span></div>
+						<div class="header__item-text">Below you will find examples of my work, and something about me.
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#about" class="go-bottom"></a>
+		</div>
+	</header>
+	<main class="about" id="about">
+		<div class="container">
+			<div class="about__items">
+				<div class="about__item">
+					<h2 class="about__item-title title">Кто я<span>.</span></h2>
+					<p class="about__item-text">Верстаю landing page, сайты-визитки и сайты для бизнеса, e-mail
+						рассылки. <br>Готов к сотрудничеству. Интересует работа как в web-студии удаленно, так и работа
+						в команде. <br>С удовольствием приму участие в работе над крупным проектом. Так же готов к
+						долгосрочному сотрудничеству.
+						По всем интересующим вопросам вы можете написать мне на e-mail или в telegram.</p>
+					<a href="#contact" class="about__item-link button">Перейти к контактамм...</a>
+				</div>
+				<div class="about__item">
+					<h2 class="about__item-title title">Мои основные навыки<span>.</span></h2>
+					<p class="about__item-text">Минимальный набор web-джедая:
+					<ul class="about__item-list">
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>jQuery</li>
+						<li class="about__item-li__lost">Кроссплатформенная и адаптивная верстка для последних версий
+							браузеров</li>
+						На jQuery могу сделать кнопки, слайдеры, эффект параллакс и что-то там еще. При необходимости
+						всегда смогу "загуглить".
+					</ul>
+					</p>
+				</div>
+				<div class="about__item">
+					<h2 class="about__item-title title">Дополнительно умею<span>.</span></h2>
+					<p class="about__item-text">Дополнительные навыки:
+					<ul class="about__item-list">
+						<li>Опыт работы с графическими редакторами Photoshop, Figma, Sketch, Avacode</li>
+						<li>Опыт работы с GIT</li>
+						<li>Препроцессоры Less, SASS, SCSS</li>
+						<li>Знание методологии БЭМ</li>
+						<li>Присутствует чувство прекрасного и бережное отношение к внешнему облику конечного продукта
+						</li>
+					</ul>
+					</p>
+				</div>
+				<div class="about__item">
+					<h2 class="about__item-title title">То<span>,</span> что изучаю сейчас</h2>
+					<p class="about__item-text">Еще чуть-чуть и постигну тайные знания по:
+					<ul class="about__item-list">
+						<li>Javascript</li>
+						<li>Ajax</li>
+						<li>CMS Wordpress</li>
+						<li>Webpack</li>
+						<li class="about__item-li__lost">Gulp</li>
+						...и на самом деле этот список можно продолжать бесконечно.
+					</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<section class="portfolio" id="portfolio">
+		<div class="portfolio-wrapper">
+			<div class="container">
+				<h2 class="portfolio__title title">Мои работы<span>.</span></h2>
+				<p class="portfolio__subtitle">Первыми представлены более поздние проекты.</p>
+				<div class="portfolio__item">
+					<img src="img/pm.png" alt="Pink Method" class="portfolio__item-img">
+					<div class="portfolio__item-desc">
+						<h3 class="portfolio__item-title title">Pink Method</h3>
+						<p class="portfolio__item-subtitle">Landing Page</p>
+						<p class="portfolio__item-text">Простой лейдинг вымышленной студии.<br> Адаптивно.
+							Кросбраузерно, но с IE версии 9 и ниже будут проблемы с корректным отображением схемы шагов.
+						</p>
+						<a href="pm/pinkmethod.html" target="_blink" class="portfolio__item-link button">Посмотреть сайт</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-wrapper">
+			<div class="container">
+				<div class="portfolio__item">
+					<img src="img/pm.png" alt="Pink Method" class="portfolio__item-img">
+					<div class="portfolio__item-desc">
+						<h3 class="portfolio__item-title title">Pink Method</h3>
+						<p class="portfolio__item-subtitle">Landing Page</p>
+						<p class="portfolio__item-text">Простой лейдинг вымышленной студии.<br> Адаптивно.
+							Кросбраузерно, но с IE версии 9 и ниже будут проблемы с корректным отображением схемы шагов.
+						</p>
+						<a href="#" class="portfolio__item-link button">Посмотреть сайт</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
