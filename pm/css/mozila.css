@@ -1,0 +1,86 @@
+@-moz-document url-prefix() {
+    .step-2 {
+        top: 72px;
+        left: 82px;
+    }
+    .step-3 {
+        top: -168px;
+        left: 248px;
+    }
+    .step-4 {
+        top: -406px;
+        left: 333px;
+    }
+    .step-5 {
+        left: 542px;
+        top: -373px;
+    }
+    .step-5::after {
+        bottom: -69px;
+        right: 66px;
+    }
+    @media (max-width: 891px) {
+        .step-2 {
+            top: 72px;
+            left: 83px;
+        }
+        .step-4 {
+            top: -114px;
+            left: 330px;
+        }
+        .step-5 {
+            left: 242px;
+            top: -8px;
+        }
+        .process_two {
+            margin-bottom: 180px;
+            margin-top: -100px;
+        }
+    }
+    @media (max-width: 550px) {
+        .step-1 {
+            top: -48px;
+            left: 82px;
+        }
+        .process_two {
+            margin-top: -70px;
+        }
+        .process__steps {
+            padding-left: 0;
+            margin-left: -30px;
+        }
+    }
+    @media (max-width: 485px) {
+        .step-3 {
+            top: 221px;
+            left: 91px;
+        }
+        .step-4 {
+            top: 275px;
+            left: 173px;
+        }
+        .step-5 {
+            left: 87px;
+            top: 381px;
+        }
+        .process_two {
+            margin-bottom: 540px;
+        }
+        .process__steps {
+            margin-left: -42px;
+        }
+    }
+    @media (max-width: 610px) {
+        .team2 .slick-next {
+            right: 110px;
+        }
+        .team2 .slick-prev {
+            left: 110px;
+        }
+    }
+    @media (max-width: 505px) {
+        .team2 .slick-arrow {
+            bottom: -15px;
+        }
+    }
+}
