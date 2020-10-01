@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+    <title>Удача!</title>
+</head>
+<body onload="refresh();">
+    <div class="overlay">
+        <div class="overlay-block">
+            <h1 class="overlay-text">Спасибо<span>!</span> Сообщение отправлено успешно.</h1>
+            <a href="index.php" class="overlay-comeback">Вернуться на сайт.</a>
+            <p>или подождать <span id="timer">5</span> секунд для автоматического возвращения.</p>
+        </div>
+    </div>
+    <script>
+        setTimeout(function(){
+            window.location.href = 'index.php';
+        }, 5 * 1000);
+        var sec=05;
+// выставляем минуты
+        var min=00;
+
+        function refresh()
+        {
+        sec--;
+        if(sec==-01){sec=59; min=min-1;}
+        else{min=min;}
+        if(sec<=9){sec="0" + sec;}
+        time=(min<=9 ? "0"+min : min) + ":" + sec;
+        if(document.getElementById){timer.innerHTML=time;}
+        inter=setTimeout("refresh()", 1000);
+	// действие, если таймер 00:00
+        if(min=='00' && sec=='00'){
+        sec="00";
+        clearInterval(inter);
+		/* выводим сообщение в элемент с id="tut", например <div id="tut"></div> */
+                tut.innerHTML="Поехали!";
+	
+        }
+}
+    </script>
+</body>
+
+</html>
