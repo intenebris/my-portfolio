@@ -16,13 +16,13 @@
     <div class="overlay">
         <div class="overlay-block">
             <h1 class="overlay-text">Спасибо<span>!</span> Сообщение отправлено успешно.</h1>
-            <a href="index.php" class="overlay-comeback">Вернуться на сайт.</a>
-            <p>или подождать <span id="timer">5</span> секунд для автоматического возвращения.</p>
+            <a href="index.html" class="overlay-comeback">Вернуться на сайт</a>
+            <p class="overlay-description">или подождать <span id="timer">5</span> секунд для автоматического возвращения.</p>
         </div>
     </div>
     <script>
         setTimeout(function(){
-            window.location.href = 'index.php';
+            window.location.href = 'index.html';
         }, 5 * 1000);
         var sec=05;
 // выставляем минуты
